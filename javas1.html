@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="marks"></h1>
+    <script>
+        let marks = window.prompt("Enter your marks: ");
+        if (marks >= 85) {
+            document.getElementById("marks").innerText = "Grade: S";
+        } else if (marks >= 75 && marks < 85) {
+            document.getElementById("marks").innerText = "Grade: A";
+        } else if (marks >= 65 && marks < 75) {
+            document.getElementById("marks").innerText = "Grade: B";
+        } else {
+            document.getElementById("marks").innerText = "Grade: Not available";
+        }
+    </script>
+</body>
+</html>
